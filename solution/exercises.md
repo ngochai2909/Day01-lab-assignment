@@ -51,7 +51,7 @@ Xem xét kịch bản: 10.000 người dùng hoạt động mỗi ngày, mỗi n
 
 ### Bài tập 2.3 — Trải Nghiệm Người Dùng với Streaming
 **Streaming quan trọng nhất trong trường hợp nào, và khi nào thì non-streaming lại phù hợp hơn?** (1 đoạn văn)
-> Streaming thực sự quan trọng khi response dài và người dùng cần chờ — ví dụ chatbot giải thích một khái niệm, viết đoạn code dài, hay tóm tắt tài liệu. Nếu phải ngồi nhìn màn hình trắng 5–10 giây mới thấy kết quả thì trải nghiệm rất tệ; nhưng nếu text hiện ra từng chữ ngay lập tức thì cảm giác hoàn toàn khác — giống như đang chat với người thật. Ngược lại, non-streaming lại hợp hơn khi cần xử lý kết quả trước khi hiển thị, chẳng hạn parse JSON từ output của model, chạy phân loại nội dung, hay khi response thường rất ngắn (dưới 2 giây) — lúc đó overhead của streaming không đáng và có thể làm phức tạp code hơn cần thiết.
+> Tính năng streaming phát huy tác dụng tối đa với các câu trả lời dài (như giải thích kiến thức, viết mã code). Việc hiển thị văn bản theo thời gian thực giúp xóa bỏ khoảng thời gian chờ đợi trống, tạo cảm giác phản hồi nhanh và tương tác tự nhiên. Ngược lại, non-streaming lại lý tưởng khi hệ thống cần xử lý ẩn dữ liệu đầu ra trước khi hiển thị (như bóc tách định dạng JSON, kiểm duyệt từ ngữ), hoặc đối với các tác vụ tạo ra phản hồi cực ngắn (dưới 2 giây) nhằm giảm bớt sự phức tạp không cần thiết cho mã nguồn.
 
 
 ## Danh Sách Kiểm Tra Nộp Bài
